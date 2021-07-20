@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="tennisCourt" class="game">
+        <div id="ball" class="game__ball"></div>
+        <div id="player" class="game__bar--left"></div>
+        <div id="cpu" class="game__bar--right"></div>
+    </div>
+    <div id="painel" class="painel">
+        <div class="painel__item">
+            <label for="" class="pontos">Pontos</label>
+            <input type="text" id="painelPoints" value="0" size="10">
+        </div>
+        <div class="painel__item">
+            <button id="startButton">Start</button>
+            <button id="pauseButton">Pause</button>
+        </div>  
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

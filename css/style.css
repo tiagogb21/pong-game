@@ -1,0 +1,79 @@
+:root{
+    --color-game: rgb(10, 133, 26);
+    --linha-de-contorno: rgb(24, 23, 23);
+    --cor-dos-objetos: #aaa;
+    --pontos: #fff;
+    --color-button:  rgb(10, 133, 26);
+    --color-font-button: #fff;
+    --color-button-hover: rgb(240, 29, 29)
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(29, 2, 2);
+}
+
+.game{
+    width: 80vw;
+    height: 70vh;
+    background: var(--color-game);
+}
+
+.game__bar--left{
+    border: 2px solid var(--linha-de-contorno);
+    background-color: var(--cor-dos-objetos);
+    position: absolute;
+}
+
+.game__ball{
+    width: 3vw;
+    height: 3vw;
+    border: 2px solid var(--linha-de-contorno);
+    border-radius: 100%;
+    background-color: var(--cor-dos-objetos);
+    position: absolute;
+}
+
+.game__bar--right{
+    border: 2px solid var(--linha-de-contorno);
+    background-color: var(--cor-dos-objetos);
+    position: absolute;
+}
+
+.painel{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pontos{
+    color: var(--pontos);
+}
+
+.painel__item{
+    width: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    width: auto;
+    height: 7vh;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-font-button);
+    background: var(--color-button);
+}
+
+button:hover{
+    background: var(--color-button-hover);
+}
